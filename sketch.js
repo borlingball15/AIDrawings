@@ -382,16 +382,13 @@ function draw() {
   strokeWeight(4);
 
   let spokenColor = localStorage.getItem('spokenColor');
-  console.log('Stored color', spokenColor);
-
-  // if (spokenColor) {
-  //   console.log('Spoken color:', spokenColor);
-  //   let c = color(spokenColor);
-  //   console.log('Parsed color:', c);
-  //   stroke(c);
-  // } else {
-  //   stroke(0); // Default to black if no spoken color is set
-  // }
+  if (spokenColor) {
+    console.log('Spoken color:', spokenColor);
+    let c = color(spokenColor);
+    stroke(c);
+  } else {
+    stroke(0); // Default to black if no spoken color is set
+  }
 
   if (personDrawing) {
     line(mouseX, mouseY, pmouseX, pmouseY);
@@ -400,7 +397,8 @@ function draw() {
 
   if (currentStroke && !drawingComplete) {
     if (nextPen == 'end') {
-      drawingComplete = true; 
+      drawingComplete = true; // Set drawingComplete to true after the first drawing is complete
+      return;
     }
     if (nextPen == 'down') {
       line(x, y, x + currentStroke.dx, y + currentStroke.dy);
