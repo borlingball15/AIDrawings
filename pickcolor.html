@@ -65,9 +65,10 @@
 
         setInterval(createLine, 500); 
     </script>
-    <button id="pickWord">SPEAK</button>
+    <button id="pickColor">SPEAK</button>
     <p id="spokenColor" class="spoken-color"></p>
-    <button id="stopSpeech">Submit</button>
+    <button id="stopSpeeches">Submit</button>
+            
     <div style="font-family: 'Little Kids Handwriting', cursive;"></div>
 
     <script src="https://cdn.jsdelivr.net/npm/p5@1.4.1/lib/p5.min.js"></script>
@@ -80,11 +81,11 @@
         let continuous = true;
         let interim = false;
 
-        document.getElementById('pickWord').addEventListener('click', function() {
+        document.getElementById('pickColor').addEventListener('click', function() {
             speechRec.start(continuous, interim);
         });
 
-        document.getElementById('stopSpeech').addEventListener('click', function() {
+        document.getElementById('stopSpeeches').addEventListener('click', function() {
             speechRec.stop();
         });
 

@@ -12,27 +12,27 @@ body {
 }
 
 button {
-    background-color: #000; /* Black background color */
+    background-color: #000; 
     margin-top: 20px; 
-    color: white; /* White text color */
-    padding: 10px 20px; /* Padding around the text */
-    border: none; /* Remove border */
-    border-radius: 5px; /* Add rounded corners */
-    text-transform: uppercase; /* Convert text to uppercase */
-    font-weight: bold; /* Bold text */
-    cursor: pointer; /* Show pointer cursor on hover */
-    transition: background-color 0.3s; /* Smooth background color transition */
+    color: white; 
+    padding: 10px 20px; 
+    border: none; 
+    border-radius: 5px; 
+    text-transform: uppercase; 
+    font-weight: bold; 
+    cursor: pointer; 
+    transition: background-color 0.3s; 
 }
 
 button {
-    position: relative; /* Ensure the buttons are positioned relative to their parent */
-    z-index: 1; /* Set a higher z-index to bring the buttons to the front */
+    position: relative; 
+    z-index: 1; 
 }
 
 img {
-    z-index: 1; /* Set a higher z-index to bring the buttons to the front */
+    z-index: 1; 
 }
 
 button:hover {
-    transform: scale(1.05); /* Enlarge button on hover */
+    transform: scale(1.05); 
 }

@@ -31,7 +31,8 @@ document.getElementById('stopSpeech').addEventListener('click', function() {
     localStorage.setItem('spokenWord', spokenWord);
 });
 
-document.getElementById('stopSpeech').addEventListener('click', function() {
+document.getElementById('stopSpeeches').addEventListener('click', function() {
     let spokenColor = document.getElementById('spokenColor').innerText;
     localStorage.setItem('spokenColor', spokenColor);
+    console.log("Stored Color", spokenColor); 
 });
