@@ -23,7 +23,7 @@ function gotSpeech() {
     }
 
     let spokenWordElement = document.getElementById("spokenWord");
-    spokenWordElement.style.fontSize = "70px"; // Adjust the font size as needed
+    spokenWordElement.style.fontSize = "70px"; 
 }
 
 document.getElementById('stopSpeech').addEventListener('click', function() {
